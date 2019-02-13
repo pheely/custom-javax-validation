@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral();
+}
+
+dependencies {
+	compile('org.hibernate:hibernate-validator:5.2.4.Final')
+	compile('javax.el:javax.el-api:2.2.4')
+	compile('org.glassfish.web:javax.el:2.2.4')
+	compileOnly 'org.projectlombok:lombok:1.16.20'
+	//compile('org.glassfish.web:javax.el:2.2.4')
+	testCompile ('junit:junit:4.12')
+}
+
